@@ -14,9 +14,10 @@
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
 # Add a feed source
-sed -i "/helloworld/d" "feeds.conf.default"
-echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
-sed -i "/passwall/d" "feeds.conf.default"
-echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
-sed -i "/MosDSN/d" "feeds.conf.default"
-echo 'src-git MosDSN https://github.com/sbwml/luci-app-mosdns' >>feeds.conf.default
+# sed -i "/helloworld/d" "feeds.conf.default"
+# echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
+# sed -i "/passwall/d" "feeds.conf.default"
+# echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
+# sed -i "/MosDSN/d" "feeds.conf.default"
+# echo 'src-git MosDSN https://github.com/sbwml/luci-app-mosdns' >>feeds.conf.default
+ sed -i '$a src-git smpackage https://github.com/kenzok8/small-package' feeds.conf.default
